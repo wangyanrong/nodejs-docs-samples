@@ -60,8 +60,8 @@
   "scripts": {
     "lint": "semistandard",
     "pretest": "npm run lint && ./scripts/clean",
-    "t": "ava -c 7 -T 30s",
-    "st": "ava -c 7 -T 180s",
+    "t": "ava -c 20 -T 30s",
+    "st": "ava -c 20 -T 180s",
     "test": "npm run t -- --verbose test/**/*.test.js **/test/**/*.test.js",
     "cover": "nyc --cache npm test && nyc report --reporter=html",
     "system-test": "npm run st -- --verbose system-test/**/*.test.js **/system-test/**/*.test.js",
