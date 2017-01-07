@@ -48,6 +48,23 @@ dependencies:
   cache_directories:
     - ~/.yarn
     - ~/.cache/yarn
+    - bigquery/node_modules
+    - computeengine/node_modules
+    - datastore/node_modules
+    - debugger/node_modules
+    - dns/node_modules
+    - language/node_modules
+    - language/slackbot/node_modules
+    - language/node_modules
+    - logging/node_modules
+    - monitoring/node_modules
+    - prediction/node_modules
+    - pubsub/node_modules
+    - resource/node_modules
+    - speech/node_modules
+    - storage/node_modules
+    - trace/node_modules
+    - translate/node_modules
 
 # Run your tests
 test:
