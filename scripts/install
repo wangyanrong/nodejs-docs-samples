@@ -45,7 +45,7 @@ queue.push('vision');
  * @param {function} callback The callback function.
  */
 function runForDirectory(directory, callback) {
-  console.log(`${directory}...running ${command}`);
+  console.log(`${directory}...running "yarn install"`);
   exec('yarn install', {
     async: true,
     cwd: path.join(__dirname, '../', directory)
