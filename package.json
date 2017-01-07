@@ -63,11 +63,11 @@
     "t": "ava --verbose -c 5 -T 30s",
     "st": "ava --verbose -c 5 -T 180s",
     "test": "npm run t -- test/**/*.test.js **/test/**/*.test.js",
-    "cover": "nyc --cache npm test && nyc report --reporter=html && nyc report --reporter=lcov",
+    "cover": "nyc --cache npm test && nyc report --reporter=html",
     "system-test": "npm run st -- system-test/**/*.test.js **/system-test/**/*.test.js",
-    "system-cover": "npm run pretest && nyc --cache npm run system-test && nyc report --reporter=html && nyc report --reporter=lcov",
+    "system-cover": "npm run pretest && nyc --cache npm run system-test && nyc report --reporter=html",
     "all-test": "npm run st -- test/**/*.test.js **/test/**/*.test.js system-test/**/*.test.js **/system-test/**/*.test.js",
-    "all-cover": "npm run pretest && nyc --cache npm run all-test && nyc report --reporter=html && nyc report --reporter=lcov"
+    "all-cover": "npm run pretest && nyc --cache npm run all-test && nyc report --reporter=html"
   },
   "devDependencies": {
     "async": "2.1.4",
